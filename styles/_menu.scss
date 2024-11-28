@@ -1,0 +1,149 @@
+@use '_variables.scss'as v;
+@use 'mixins'as m;
+
+html {font-size: calc(1vw / 14.4)}
+
+.home {
+    max-width: 1440rem;
+    max-height: 633rem;
+}
+
+.container {}
+
+.home-title {
+    @include m.d-flex(center, center, nowrap, column, 1px);
+    padding: 130rem;
+}
+
+.title {
+    width: 695rem;
+    height: 135rem;
+    @include m.d-flex(center, center, nowrap, column, 1px);
+    font-family: Fraunces, from-font;
+    font-size: 56rem;
+    font-weight: 700;
+    color: v.$color_white;
+    text-align: center;
+    padding: 0 0 130rem 0;
+
+
+}
+
+.description {
+    width: 710rem;
+    height: 60rem;
+    @include m.d-flex(center, center);
+    font-size: 20rem;
+    font-weight: 400;
+    color: v.$color_white;
+    text-align: center;
+}
+
+.home-btn {
+
+    @include m.d-flex(center, center, nowrap, row, 0 , 1px);
+}
+
+.home-btn-green {
+    border: 2px solid v.$color_green;
+    border-radius: 30rem;
+    padding: 15rem;
+    font-size: 15rem;
+    font-weight: 700;
+    line-height: 24rem;
+    width: 140rem;
+    height: 50rem;
+    @include m.d-flex(center, center, nowrap, row);
+    background: v.$color_green;
+    color: v.$color_dark_blue;
+    cursor: pointer;
+
+    &:hover {
+        background-color: v.$color_dark_blue;
+        color: v.$color_white;
+        transition-duration: 0.5s;
+    }
+}
+
+.home-btn-blue {
+    border: none;
+    border-radius: 30rem;
+    padding: 15rem;
+    font-size: 15rem;
+    font-weight: 700;
+    line-height: 24rem;
+    width: 140rem;
+    height: 50rem;
+    @include m.d-flex(center, center, nowrap, row);
+    background-color: v.$color_dark_blue;
+    color: v.$color_white;
+    cursor: pointer;
+
+    &:hover {
+        background-color: v.$color_white;
+        color: v.$color_dark_blue;
+        transition-duration: 0.5s;
+    }
+}
+
+.logo-bracket {
+    position: sticky;
+    width: 11rem;
+    height: 11rem;
+}
+
+.home-figure {
+    position: absolute;
+}
+
+.rings-img {
+    width: 187rem;
+    height: 250rem;
+    position: relative;
+    bottom: 440rem;
+    right: 10rem;
+}
+
+.check-mark-img {
+    width: 170rem;
+    height: 240rem;
+    position: absolute;
+    left: 1263rem;
+    bottom: 270rem;
+}
+
+.string-img {
+    width: 260rem;
+    height: 275rem;
+    position: relative;
+    right: 190rem;
+    top: 150rem;
+}
+
+.home-img_line {
+    padding: 120rem 0 0 0;
+    @include m.d-flex(center, center, nowrap, row, 30rem);
+    // width: 768rem;
+    // height: 100rem;
+}
+
+.logo_squere-img {
+    width: 132rem;
+    height: 35rem;
+
+}
+
+.logo_medusa-img {
+    width: 132rem;
+    height: 35rem;
+}
+
+.logo_big-img {
+    width: 134rem;
+    height: 34rem;
+}
+
+.logo_string-img {
+    width: 140rem;
+    height: 30rem;
+}

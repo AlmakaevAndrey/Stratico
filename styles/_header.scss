@@ -1,0 +1,132 @@
+@use '_variables.scss'as v;
+@use 'mixins'as m;
+
+html {font-size: calc(1vw / 14.4)}
+
+.header {
+    width: 100%;
+    background-color: v.$color_white;
+    height: 75rem;
+}
+
+.header__inner {
+    // display: flex;
+    // justify-content: start;
+    // align-items: start;
+    @include m.d-flex(space-between, center, nowrap, row);
+    padding: 0 5% 0 5%;
+    height: 75rem;
+}
+
+.inner__logo {
+    @include m.d-flex(center, center);
+    width: 125rem;
+
+}
+
+.logo {
+    @include m.d-flex(space-between, center, nowrap, row);
+
+    @media (max-width:v.$media_xl) {
+        .vector-svg {
+            width: 85px;
+            height: 20px;
+        }
+    }
+}
+
+.logo-vector {
+    fill: #C1D585;
+    width: 25rem;
+    height: 25rem;
+
+    &:hover {
+        fill: v.$color_dark_blue;
+        transition-duration: 0.5s;
+        }
+}
+
+.logo-stratico {
+    fill: v.$color_dark_blue;
+    padding: 5rem 0 0 5rem;
+    width: 100rem;
+    height: 25rem;
+
+    &:hover {
+        fill:#C1D585;;
+        transition-duration: 0.5s;
+    }
+}
+
+
+.menu {
+    @include m.d-flex(space-between, center, nowrap, row);
+    width: 585rem;
+    font-family: Space Grotesk;
+    font-size: 16rem;
+    font-weight: 400;
+    line-height: 24rem;
+
+}
+
+.menu__list {
+    @include m.d-flex(space-around, center, nowrap, row, 0, 40rem);
+    width: 400rem;
+    color: v.$color_dark_blue;
+}
+
+.menu__item {}
+
+.menu__link {
+    &:hover {
+        color:#C1D585;;
+        transition-duration: 0.5s;
+    }
+}
+
+.menu__btn {
+    @include m.d-flex(space-between, center, nowrap, row, 0, 10rem);
+    width: 250rem;
+}
+
+.menu__btn-white {
+    border: 2rem solid v.$color_dark_blue;
+    border-radius: 30rem;
+    padding: 15rem;
+    font-size: 16rem;
+    font-weight: 400;
+    line-height: 24rem;
+    width: 90rem;
+    height: 44rem;
+    @include m.d-flex(center, center, nowrap, row);
+    background: v.$color_white;
+    color: v.$color_dark_blue;
+    cursor: pointer;
+
+    &:hover {
+    background-color: v.$color_dark_blue;
+    color: v.$color_white;
+    transition-duration: 0.5s;
+    }
+}
+
+.menu__btn-blue {
+    border: 2rem solid v.$color_dark_blue;
+    border-radius: 30rem;
+    padding: 15rem;
+    font-size: 16rem;
+    font-weight: 400;
+    line-height: 24rem;
+    width: 130rem;
+    height: 44rem;
+    @include m.d-flex(center, center, nowrap, row);
+    background: v.$color_dark_blue;
+    color: v.$color_white;
+    cursor: pointer;
+
+    &:hover {
+        background-color: v.$color_white;
+        color: v.$color_dark_blue;
+        transition-duration: 0.5s;
+        }
+}
