@@ -5,7 +5,7 @@ html {font-size: calc(1vw / 14.4)}
 
 .home {
     max-width: 1440rem;
-    max-height: 633rem;
+    height: 1100rem;
 }
 
 .container {}
@@ -48,6 +48,7 @@ html {font-size: calc(1vw / 14.4)}
     border: 2px solid v.$color_green;
     border-radius: 30rem;
     padding: 15rem;
+    font-family: Space Grotesk;
     font-size: 15rem;
     font-weight: 700;
     line-height: 24rem;
@@ -69,6 +70,7 @@ html {font-size: calc(1vw / 14.4)}
     border: none;
     border-radius: 30rem;
     padding: 15rem;
+    font-family: Space Grotesk;
     font-size: 15rem;
     font-weight: 700;
     line-height: 24rem;
@@ -99,29 +101,29 @@ html {font-size: calc(1vw / 14.4)}
 .rings-img {
     width: 187rem;
     height: 250rem;
-    position: relative;
-    bottom: 440rem;
-    right: 10rem;
+    position: absolute;
+    bottom: 170rem;
+    right: -100rem;
 }
 
 .check-mark-img {
     width: 170rem;
     height: 240rem;
     position: absolute;
-    left: 1263rem;
-    bottom: 270rem;
+    left: 1183rem;
+    bottom: -70rem;
 }
 
 .string-img {
     width: 260rem;
     height: 275rem;
-    position: relative;
-    right: 190rem;
-    top: 150rem;
+    position: absolute;
+    right: -170rem;
+    top: 170rem;
 }
 
 .home-img_line {
-    padding: 120rem 0 0 0;
+    padding: 120rem 0 150rem 0 ;
     @include m.d-flex(center, center, nowrap, row, 30rem);
     // width: 768rem;
     // height: 100rem;

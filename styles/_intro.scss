@@ -1,0 +1,218 @@
+@use '_variables.scss'as v;
+@use 'mixins'as m;
+
+.intro {
+    max-width: 1440rem;
+    background-color: v.$color_white;
+    @include m.d-flex(center, center);
+}
+
+.container {
+    max-width: 1280rem;
+    border: no;
+}
+
+.intro-watch {
+    position: relative;
+    bottom: 300rem;
+    width: 1280rem;
+    height: 640rem;
+}
+
+.watch-img {
+    width: 1280rem;
+    height: 640rem;
+}
+
+.watch-btn {
+    position: relative;
+    border: 2px solid v.$color_green;
+    border-radius: 30rem;
+    padding: 15rem;
+    font-size: 15rem;
+    font-weight: 700;
+    line-height: 24rem;
+    width: 230rem;
+    height: 52rem;
+    @include m.d-flex(center, center);
+    background: v.$color_green;
+    color: v.$color_dark_blue;
+    cursor: pointer;
+    bottom: 345rem;
+    left: 520rem;
+
+    &:hover {
+        background-color: v.$color_dark_blue;
+        color: v.$color_white;
+        transition-duration: 0.5s;
+    }
+}
+
+.intro-content {
+    width: 1280rem;
+    height: 600rem;
+    @include m.d-flex(space-between, center);
+}
+
+.intro-increase {}
+
+.increase-img {
+    width: 600rem;
+    height: 600rem;
+}
+
+.intro-card {
+    width: 420rem;
+    height: 120rem;
+    background-color: v.$color_green;
+    border-radius: 25rem;
+    @include m.d-flex(space-between, center, );
+    padding: 15rem;
+    position: relative;
+    left: 220rem;
+    bottom: 170rem;
+
+}
+
+.intro-card-text {
+    @include m.d-flex(center, start, nowrap, column);
+    color: v.$color_dark_blue;
+    width: 175rem;
+    height: 70rem;
+
+}
+
+.intro-card-title {
+    color: v.$color_dark_blue;
+    width: 70rem;
+    height: 40rem;
+    font-family: Fraunces, from-font;
+    font-size: 32rem;
+    font-weight: 700;
+
+}
+
+.intro-card-desc {
+    color: v.$color_dark_blue;
+    width: 175rem;
+    height: 30rem;
+    font-family: Space Grotesk;
+    font-size: 20rem;
+    font-weight: 400;
+}
+
+.intro-card-img {
+    width: 48rem;
+    height: 48rem;
+    border-radius: 15rem;
+    object-fit: cover;
+    border: 10rem solid v.$color_dark_blue;
+}
+
+
+.intro-description {
+    width: 600rem;
+    height: 305rem;
+    @include m.d-flex(space-between, left, nowrap, column);
+}
+
+.description-overview {
+    @include m.d-flex(center, center);
+    width: 72rem;
+    height: 32rem;
+    border-radius: 10rem;
+    background-color: v.$color_green;
+    // border: 1px solid v.$color_green;
+    font-family: Space Grotesk;
+    font-size: 15rem;
+    font-weight: 700;
+}
+
+.description-title {
+    width: 460rem;
+    height: 48rem;
+    font-family: Fraunces;
+    font-size: 40rem;
+    font-weight: 400;
+    color: v.$color_dark_blue;
+    }
+
+.description-text {
+    width: 600rem;
+    height: 110rem;
+    font-family: Space Grotesk;
+    font-size: 18rem;
+    font-weight: 400;
+    color: v.$color_grey;
+}
+
+.description-btn {
+    @include m.d-flex(start, start);
+    width: 600rem;
+    height: 52rem;
+}
+
+.description-btn-1 {
+    border: 2rem solid v.$color_dark_blue;
+    border-radius: 30rem;
+    font-family: Space Grotesk;
+    font-size: 16rem;
+    font-weight: 400;
+    line-height: 24rem;
+    width: 140rem;
+    height: 52rem;
+    @include m.d-flex(center, center,);
+    background: v.$color_white;
+    color: v.$color_dark_blue;
+    cursor: pointer;
+
+    &:hover {
+    background-color: v.$color_dark_blue;
+    color: v.$color_white;
+    transition-duration: 0.5s;
+    }
+}
+
+.description-btn-2 {
+    border: none;
+    border-radius: 30rem;
+    padding: 15rem;
+    font-family: Space Grotesk;
+    font-size: 15rem;
+    font-weight: 700;
+    line-height: 24rem;
+    width: 140rem;
+    height: 50rem;
+    @include m.d-flex(center, center, nowrap, row);
+    background-color: v.$color_white;
+    color: v.$color_dark_blue;
+    cursor: pointer;
+
+    &:hover {
+        background-color: v.$color_green;
+        color: v.$color_dark_blue;
+        transition-duration: 0.5s;
+    }
+}
+
+.description-bracket-icon {
+    @include m.d-flex(center, center);
+    align-items: center;
+    width: 10rem;
+    height: 10rem;
+    fill: v.$color_dark_blue;
+}
+
+.description-waves {
+    width: 170rem;
+    height: 92rem;
+}
+
+.description-wave_first-icon {
+}
+
+.description-wave_second-icon {
+}
+
+.description-wave_third-icon {
+}
