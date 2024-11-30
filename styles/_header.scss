@@ -27,12 +27,6 @@ html {font-size: calc(1vw / 14.4)}
 .logo {
     @include m.d-flex(space-between, center, nowrap, row);
 
-    @media (max-width:v.$media_xl) {
-        .vector-svg {
-            width: 85px;
-            height: 20px;
-        }
-    }
 }
 
 .logo-vector {

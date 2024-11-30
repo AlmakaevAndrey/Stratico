@@ -147,7 +147,7 @@
 }
 
 .description-btn {
-    @include m.d-flex(start, start);
+    @include m.d-flex(start, center);
     width: 600rem;
     height: 52rem;
 }
@@ -204,15 +204,40 @@
 }
 
 .description-waves {
-    width: 170rem;
+    @include m.d-flex(center, center, nowrap, column, 0, 10rem);
+    width: 130rem;
     height: 92rem;
+    position: absolute;
+    top: 1780rem;
+    left: 1300rem;
+
 }
 
 .description-wave_first-icon {
+        width: 135rem;
+        height: 22rem;
 }
+
+// .wave_first {
+//         width: 130rem;
+// }
 
 .description-wave_second-icon {
+    width: 135rem;
+    height: 20rem;
 }
 
+// .wave-second {
+//     width: 160rem;
+//     height: 20rem;
+// }
+
 .description-wave_third-icon {
+    width: 135rem;
+    height: 26rem;
 }
+
+// .wave-third {
+//     width: 164rem;
+//     height: 26rem;
+// }
