@@ -1,0 +1,172 @@
+@use '_variables.scss'as v;
+@use 'mixins'as m;
+
+html {
+    font-size: calc(1vw / 14.4)
+}
+
+
+.work {
+    width: 1440rem;
+    height: 890rem;
+    @include m.d-flex(center, center, nowrap, column);
+    background-color: v.$color_white;
+}
+
+.work_section {
+    width: 1280rem;
+    height: 890rem;
+    background-color: v.$color_green;
+    @include m.d-flex(space-around, center, nowrap, column);
+    border-radius: 25rem
+}
+
+.work_head {
+    @include m.d-flex(center, center, nowrap, column);
+    width: 768rem;
+    height: 175rem;
+}
+
+.work_head-img {
+    width: 206rem;
+    height: 140rem;
+    position: relative;
+    left: 500rem;
+    top: 70rem;
+}
+
+.work_head_title {
+    width: 700rem;
+    height: 100rem;
+    font-family: Fraunces;
+    font-size: 40rem;
+    font-weight: 400;
+    line-height: 48rem;
+    color: v.$color_dark_blue;
+    @include m.d-flex(center, center);
+    text-align: center;
+    margin: 50rem 0 0 0;
+}
+
+.work_head_desc {
+    @include m.d-flex(center, center);
+    font-family: Space Grotesk;
+    font-size: 18rem;
+    font-weight: 400;
+    line-height: 27rem;
+    width: 744rem;
+    height: 54rem;
+    text-align: center;
+    margin: 70rem 0 0 0;
+}
+
+.work_cards {
+    @include m.d-flex(center, center);
+    width: 1150rem;
+    height: 305rem;
+    margin: 70rem 0 0 0;
+}
+
+.work_card {
+    width: 370rem;
+    height: 310rem;
+    background-color: v.$color_dark_blue;
+    border-radius: 25rem;
+    @include m.d-flex(center, center, nowrap, column);
+}
+
+.card_around-icon {
+    @include m.d-flex(center, center);
+    width: 100rem;
+    height: 100rem;
+}
+
+.card_work-icon {
+    @include m.d-flex(center, center);
+    width: 100rem;
+    height: 100rem;
+    padding: 10rem 0 0 10rem;
+}
+
+.card_profit-icon {
+    @include m.d-flex(center, center);
+    width: 100rem;
+    height: 100rem;
+    padding: 10rem 0 0 10rem;
+}
+
+.card_title {
+    font-family: Fraunces;
+    font-size: 20rem;
+    font-weight: 400;
+    color: v.$color_white;
+    margin: 10rem;
+}
+
+.card_desc {
+    @include m.d-flex(center, center);
+    width: 280rem;
+    height: 80rem;
+    font-family: Space Grotesk;
+    font-size: 15rem;
+    font-weight: 400;
+    line-height: 24rem;
+    color: v.$color_white;
+    text-align: center;
+}
+
+.work_btn {
+    @include m.d-flex(center, center, nowrap, row, 0, 1px);
+}
+
+.btn_first {
+    border: 2px solid v.$color_dark_blue;
+    border-radius: 30rem;
+    padding: 15rem;
+    font-family: Space Grotesk;
+    font-size: 15rem;
+    font-weight: 700;
+    line-height: 24rem;
+    width: 140rem;
+    height: 50rem;
+    @include m.d-flex(center, center, nowrap, row);
+    background: v.$color_green;
+    color: v.$color_dark_blue;
+    cursor: pointer;
+
+    &:hover {
+        background-color: v.$color_dark_blue;
+        color: v.$color_white;
+        transition-duration: 0.5s;
+    }
+}
+
+.btn_second {
+    border: none;
+    border-radius: 30rem;
+    padding: 15rem;
+    font-family: Space Grotesk;
+    font-size: 15rem;
+    font-weight: 700;
+    line-height: 24rem;
+    width: 140rem;
+    height: 50rem;
+    @include m.d-flex(center, center, nowrap, row);
+    background-color: v.$color_green;
+    color: v.$color_dark_blue;
+    cursor: pointer;
+
+    &:hover {
+        background-color: v.$color_dark_blue;
+        color: v.$color_green;
+        transition-duration: 0.5s;
+    }
+}
+
+.btn-icon {
+    position: sticky;
+    width: 11rem;
+    height: 11rem;
+    fill: v.$color_dark_blue;
+
+}
