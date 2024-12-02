@@ -5,6 +5,7 @@
     max-width: 1440rem;
     background-color: v.$color_white;
     @include m.d-flex(center, center);
+    padding: 0 0 300rem 0;
 }
 
 .container {
