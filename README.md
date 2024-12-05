@@ -1,1 +1,1 @@
-# Landing page Srartico
+# Landing page Startico

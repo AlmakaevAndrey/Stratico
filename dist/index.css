@@ -52,7 +52,7 @@ html {
 }
 
 .header {
-  width: 100%;
+  max-width: 1440rem;
   background-color: #FFFFFF;
   height: 75rem;
 }
@@ -349,7 +349,7 @@ html {
   width: 170rem;
   height: 240rem;
   position: absolute;
-  left: 1183rem;
+  left: 1175rem;
   bottom: -70rem;
 }
 
@@ -403,6 +403,7 @@ html {
   column-gap: 0;
   row-gap: 0;
   padding: 0 0 300rem 0;
+  position: relative;
 }
 
 .container {
@@ -662,8 +663,8 @@ html {
   width: 130rem;
   height: 92rem;
   position: absolute;
-  top: 1780rem;
-  left: 1300rem;
+  top: 630rem;
+  left: 1283rem;
 }
 
 .description-wave_first-icon {
@@ -686,7 +687,7 @@ html {
 }
 
 .work {
-  width: 1440rem;
+  max-width: 1440rem;
   height: 890rem;
   display: flex;
   justify-content: center;

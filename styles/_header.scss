@@ -4,7 +4,7 @@
 html {font-size: calc(1vw / 14.4)}
 
 .header {
-    width: 100%;
+    max-width: 1440rem;
     background-color: v.$color_white;
     height: 75rem;
 }

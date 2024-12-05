@@ -7,7 +7,7 @@ html {
 
 
 .work {
-    width: 1440rem;
+    max-width: 1440rem;
     height: 890rem;
     @include m.d-flex(center, center, nowrap, column);
     background-color: v.$color_white;
