@@ -4,23 +4,23 @@
 html {font-size: calc(1vw / 14.4)}
 
 .header {
-    max-width: 1440rem;
+    max-width: 1440px;
     background-color: v.$color_white;
-    height: 75rem;
+    height: 75px;
 }
 
 .header__inner {
-    // display: flex;
-    // justify-content: start;
-    // align-items: start;
+    display: flex;
+    justify-content: start;
+    align-items: start;
     @include m.d-flex(space-between, center, nowrap, row);
     padding: 0 5% 0 5%;
-    height: 75rem;
+    height: 75px;
 }
 
 .inner__logo {
     @include m.d-flex(center, center);
-    width: 125rem;
+    width: 125px;
 
 }
 
@@ -31,8 +31,8 @@ html {font-size: calc(1vw / 14.4)}
 
 .logo-vector {
     fill: #C1D585;
-    width: 25rem;
-    height: 25rem;
+    width: 25px;
+    height: 25px;
 
     &:hover {
         fill: v.$color_dark_blue;
@@ -42,9 +42,9 @@ html {font-size: calc(1vw / 14.4)}
 
 .logo-stratico {
     fill: v.$color_dark_blue;
-    padding: 5rem 0 0 5rem;
-    width: 100rem;
-    height: 25rem;
+    padding: 5px 0 0 5px;
+    width: 100px;
+    height: 25px;
 
     &:hover {
         fill:#C1D585;;
@@ -55,17 +55,17 @@ html {font-size: calc(1vw / 14.4)}
 
 .menu {
     @include m.d-flex(space-between, center, nowrap, row);
-    width: 585rem;
+    width: 585px;
     font-family: Space Grotesk;
-    font-size: 16rem;
+    font-size: 16px;
     font-weight: 400;
-    line-height: 24rem;
+    line-height: 24px;
 
 }
 
 .menu__list {
-    @include m.d-flex(space-around, center, nowrap, row, 0, 40rem);
-    width: 400rem;
+    @include m.d-flex(space-around, center, nowrap, row, 0, 40px);
+    width: 400px;
     color: v.$color_dark_blue;
 }
 
@@ -79,20 +79,20 @@ html {font-size: calc(1vw / 14.4)}
 }
 
 .menu__btn {
-    @include m.d-flex(space-between, center, nowrap, row, 0, 10rem);
-    width: 250rem;
+    @include m.d-flex(space-between, center, nowrap, row, 0, 10px);
+    width: 250px;
 }
 
 .menu__btn-white {
-    border: 2rem solid v.$color_dark_blue;
-    border-radius: 30rem;
-    padding: 15rem;
+    border: 2px solid v.$color_dark_blue;
+    border-radius: 30px;
+    padding: 15px;
     font-family: Space Grotesk;
-    font-size: 16rem;
+    font-size: 16px;
     font-weight: 400;
-    line-height: 24rem;
-    width: 90rem;
-    height: 44rem;
+    line-height: 24px;
+    width: 90px;
+    height: 44px;
     @include m.d-flex(center, center, nowrap, row);
     background: v.$color_white;
     color: v.$color_dark_blue;
@@ -106,15 +106,15 @@ html {font-size: calc(1vw / 14.4)}
 }
 
 .menu__btn-blue {
-    border: 2rem solid v.$color_dark_blue;
-    border-radius: 30rem;
-    padding: 15rem;
+    border: 2px solid v.$color_dark_blue;
+    border-radius: 30px;
+    padding: 15px;
     font-family: Space Grotesk;
-    font-size: 16rem;
+    font-size: 16px;
     font-weight: 400;
-    line-height: 24rem;
-    width: 130rem;
-    height: 44rem;
+    line-height: 24px;
+    width: 130px;
+    height: 44px;
     @include m.d-flex(center, center, nowrap, row);
     background: v.$color_dark_blue;
     color: v.$color_white;
